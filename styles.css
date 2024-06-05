@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    /*background-image: url('26923332.jpg');  Change 'background.jpg' to the path of your image */
+    background-image: url('images/auth-one-bg.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
