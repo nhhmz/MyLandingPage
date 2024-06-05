@@ -4,34 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Stack Developer Portfolio</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    #hero {
+      background-color: #f8f9fa;
+      padding: 100px 0;
+    }
+    #hero img {
+      width: 150px;
+      border-radius: 50%;
+    }
+    #about {
+      background-color: #ffffff;
+      padding: 100px 0;
+    }
+    #projects {
+      background-color: #f8f9fa;
+      padding: 100px 0;
+    }
+    #contact {
+      background-color: #ffffff;
+      padding: 100px 0;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img class="rounded" src="images/alx.png" alt="logo">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/alx.png" alt="logo" width="30" height="30" class="d-inline-block align-top">
+          Full Stack Developer
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
-  <section id="hero" class="jumbotron text-center">
+  <section id="hero" class="text-center">
     <div class="container">
-      <img class="rounded" src="images/avatar-1.jpg" alt="MyPhoto">
+      <img src="images/avatar-1.jpg" alt="MyPhoto">
       <h1 class="display-4">Ibrahim NASSIH</h1>
       <h2 class="lead">Full Stack Developer</h2>
       <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
@@ -40,25 +76,25 @@
 
   <section id="about" class="py-5">
     <div class="container">
-      <h2 class="mb-4">About Me</h2>
-      <p>
-        I'm Ibrahim Nassih, a Full Stack Developer trained by ALX. Proficient in HTML, CSS, JavaScript, python, MySQL, and MongoDB. Passionate about crafting seamless web experiences and building robust solutions..
+      <h2 class="mb-4 text-center">About Me</h2>
+      <p class="lead text-center">
+        I'm Ibrahim Nassih, a Full Stack Developer trained by ALX. Proficient in HTML, CSS, JavaScript, python, MySQL, and MongoDB. Passionate about crafting seamless web experiences and building robust solutions.
       </p>
-      <p>
+      <p class="text-center">
         In every project I undertake, my goal is not just to deliver code, but to craft solutions that resonate with users and empower businesses to thrive in the digital realm. Let's collaborate and turn ideas into reality, one line of code at a time!
       </p>
     </div>
   </section>
 
-  <section id="projects" class="bg-light py-5">
+  <section id="projects" class="py-5">
     <div class="container">
-      <h2 class="mb-4">Projects</h2>
+      <h2 class="mb-4 text-center">Projects</h2>
       <div class="row">
         <div class="col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h3 class="card-title">Portfolio Website</h3>
-              <p class="card-text"> Portfolio Project landing page intended to share information about me and projects that i worked on them with alx pragramm.</p>
+              <p class="card-text"> Portfolio Project landing page intended to share information about me and projects that I worked on them with ALX program.</p>
               <a href="https://github.com/Ibrahim-nassih/MyLandingPage" class="btn btn-primary">View Project</a>
             </div>
           </div>
@@ -66,36 +102,39 @@
         <div class="col-lg-4 mb-4">
           <div class="card">
             <div class="card-body">
-              <h3 class="card-title">System Engineering devops</h3>
-              <p class="card-text">A project that cover a lot of experieces in linux system, networking, security, ...</p>
+              <h3 class="card-title">System Engineering DevOps</h3>
+              <p class="card-text">A project that covers a lot of experiences in Linux system, networking, security, ...</p>
               <a href="https://github.com/Ibrahim-nassih/alx-system_engineering-devops" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title">Higher level programming</h3>
-                <p class="card-text">A project programming language especially python.</p>
-                <a href="https://github.com/Ibrahim-nassih/alx-higher_level_programming" class="btn btn-primary">View Project</a>
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Higher Level Programming</h3>
+              <p class="card-text">A project programming language especially Python.</p>
+              <a href="https://github.com/Ibrahim-nassih/alx-higher_level_programming" class="btn btn-primary">View Project</a>
             </div>
           </div>
-        <!-- Add more project sections as needed -->
+        </div>
       </div>
     </div>
   </section>
 
   <section id="contact" class="py-5">
     <div class="container">
-      <h2 class="mb-4">Contact Me</h2>
-      <p>If you have any questions or would like to discuss a potential project, feel free to get in touch with me. I'm available for freelance work and open to new opportunities.</p>
-      <a href="mailto:Binni3673@gmail.com" class="btn btn-primary">Email Me</a>
+      <h2 class="mb-4 text-center">Contact Me</h2>
+      <p class="lead text-center">If you have any questions or would like to discuss a potential project, feel free to get in touch with me. I'm available for freelance work and open to new opportunities.</p>
+      <div class="text-center">
+        <a href="mailto:Binni3673@gmail.com" class="btn btn-primary">Email Me</a>
+      </div>
     </div>
   </section>
 
   <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Nassih. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 Nassih. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
